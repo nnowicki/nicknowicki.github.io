@@ -7234,7 +7234,7 @@ input, select, textarea {
 	}
 
 	.wrapper.style1 > .inner {
-		padding: 7rem 3.5rem 5rem 3.5rem ;
+		padding: 3.5rem 3.5rem 5rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;
