@@ -105,7 +105,7 @@ input, select, textarea {
 	}
 
 	*, *:before, *:after {
-		box-sizing: inherit;
+		box-sizing: border-box; /* inherit; */
 	}
 
 	body {
@@ -361,6 +361,12 @@ input, select, textarea {
 
 /* Row */
 
+	.column {
+	 	float: left;
+		width: 50%;
+		padding: 10px;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -382,6 +388,12 @@ input, select, textarea {
 
 		.row.aln-center {
 			justify-content: center;
+		}
+
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
 		}
 
 		.row.aln-right {
@@ -2727,6 +2739,10 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
+		ul.alt2 {
+			list-style: none;
+			padding-left: 0;
+		}
 
 	dl {
 		margin: 0 0 2rem 0;
@@ -7224,17 +7240,14 @@ input, select, textarea {
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
-		padding: 7rem 3.5rem 5rem 3.5rem ;
+		padding: 3.5rem 3.5rem 3.5rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;
-		h4 {
-
-		}
 	}
 
 	.wrapper.style1 > .inner {
-		padding: 3.5rem 3.5rem 5rem 3.5rem ;
+		padding: 3.5rem 3.5rem 3.5rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;
@@ -7248,6 +7261,7 @@ input, select, textarea {
 			width: 32rem;
 		}
 
+		
 	@media screen and (max-width: 1680px) {
 
 		.wrapper.style1 > .inner {
