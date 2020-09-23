@@ -25,9 +25,15 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+div.top {
+	margin: 0;
+	width: 100%;
+	display: inline-block;
+}
+
 header {
 	margin: 5pt;
-	padding: 15pt;
+	padding: 10pt;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -220,6 +226,10 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2.25rem;
+	}
+
+	h2.alt {
+		margin: 0;
 	}
 
 	h3 {
@@ -2949,6 +2959,27 @@ input, select, textarea {
 
 	header p {
 		color: rgba(0, 0, 0, 0.75);
+	}
+
+	#nav-head {
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    margin: 0pt;
+		padding: 0pt;
+    	background: #fff;
+    	background: rgba(255, 255, 255, 0.95);
+    	z-index: 10000;
+	    box-shadow: 0 0 1px 0 rgba(16, 16, 32, 0.25), 0 0 2px 0 rgba(0, 0, 0, 0.15);
+	    height: 6.25em;
+	    -moz-transition: top 0.25s ease-in-out;
+	    -webkit-transition: top 0.25s ease-in-out;
+	    -ms-transition: top 0.25s ease-in-out;
+	    transition: top 0.25s ease-in-out;
+	    font-size: 0.9em;
+	    z-index: 10000;
+	    cursor: default;
 	}
 
 /* Table */
