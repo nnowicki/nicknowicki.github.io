@@ -1,0 +1,24 @@
+baseURL = 'https://nnowicki.github.io/'
+languageCode = 'en-us'
+title = 'Nick Nowicki'
+theme = 'etch'
+
+[params]
+  description = "Personal site and blog"
+  copyright = "Copyright © 2025 Nick Nowicki"
+  dark = "auto"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 20
+
